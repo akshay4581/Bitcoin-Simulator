@@ -1,0 +1,129 @@
+<%# <div class="jumbotron">
+  <h2>Welcome to Bitcoin Explorer</h2>
+  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+</div> %>
+
+
+  <div class="form-group">
+    <div class = "col-sm-2">
+    <label for="exampleInputEmail1">Enter no. of nodes (2-100):</label> </div>
+    <div class = "col-sm-4">
+    <label for="blockNum">Enter no. of blocks (5-20):</label> </div>
+    <div class = "col-sm-3"> <label for="bitcoins">Total Bitcoins Mined:</label> </div>
+    <div class = "col-sm-3"> <label for="bitcoins_transacted">Total Bitcoins Transacted:</label> </div>
+   <br>
+    <div class="col-sm-2"><input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter number"></div>
+    <div class="col-sm-2"><input type="number" class="form-control" id="blockNum" placeholder="Enter number"></div>
+    <div class = "col-sm-2"><button class="btn btn-sm btn-primary btn-signin" id="loginButton">Begin Simulation</button></div>
+    <div class = "col-sm-3"><p id="bitcoins"></p> </div>
+    <div class = "col-sm-3"><p id="bitcoins_transacted"></p> </div>
+    <br>
+  </div>
+  
+  <br>
+
+  <label> Block Details: </label>
+  <div class="span3">
+  <div class="table-responsive">
+  <table class="table table-striped" id="blocktable">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Height</th>
+      <th scope="col">Merkel Root</th>
+      <th scope="col">Bits</th>
+      
+      <th scope="col">Time Stamp</th>
+      <th scope="col">Number of Transactions</th>
+      <th scope="col">Mined By</th>
+      <th scope="col">Block Hash</th>
+      <th scope="col">Previous Hash</th>
+      <th scope="col">Status</th>
+      <th scope="col">Nonce</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody> 
+  </table>
+  </div>
+  </div>
+
+  <br>
+  <label for="transtable">Transaction Details: </label>
+  <div class="span3">
+    <div class="table-responsive">
+     <table class="table table-striped" id="transtable">
+      <thead>
+        <tr>
+          <th scope="col">Block Height</th>
+          <th scope="col">Sender Address</th>
+          <th scope="col">Receiver Address</th>
+          <th scope="col">Transaction value</th>
+          <th scope="col">Change</th>
+          <th scope="col">Transaction Fee</th>
+          <th scope="col">Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody> 
+    </table>
+    </div>
+  </div>
+
+  <br/>
+  
+  <div class = "col-md-6">
+    <canvas id="timeChart" width="500" height="300"></canvas>
+  </div>
+  <div class = "col-md-6">
+    <canvas id="nonceChart" width="500" height="300"></canvas>
+  </div>
+  <br>
+  <br>
+  <div class="col-md-6" >
+    <canvas id="transactionChart" width="500" height="300"></canvas>
+  </div>
+  <div class = "col-md-6">
+  </div>
+  
+  
+
+<%# <script>
+  $("#confirm").click(function(){
+    
+    window.location.href = "dashboard/"+$("#num").val()
+  });
+
+</script> %>
+
+<%# <div class="row marketing">
+  <div class="col-lg-6">
+    <h4>Resources</h4>
+    <ul>
+      <li>
+        <a href="http://phoenixframework.org/docs/overview">Guides</a>
+      </li>
+      <li>
+        <a href="https://hexdocs.pm/phoenix">Docs</a>
+      </li>
+      <li>
+        <a href="https://github.com/phoenixframework/phoenix">Source</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h4>Help</h4>
+    <ul>
+      <li>
+        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
+      </li>
+      <li>
+        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
+      </li>
+    </ul>
+  </div>
+</div> %>
