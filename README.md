@@ -1,6 +1,6 @@
 # Bitcoin
 
-COP5615 - Project 4.2 
+COP5615 - Project 4.1 & 4.2
 
 # Group
 
@@ -8,7 +8,7 @@ Akshay Rechintala - 4581 6988
 Vineeth Chennapalli - 3124 2465
 
 
-# Background, Distribution Protocl, Transaction & Block Mining Scenarios Details
+# Background, Distribution Protocol, Transaction & Block Mining Scenarios Details
 
 1. In the first part of the project, we implemented functionality components for the bitcoin network protocol. Various test cases were considered to test the functionality.
 
